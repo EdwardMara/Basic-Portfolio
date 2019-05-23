@@ -11,7 +11,8 @@ Footer background color: #666666
 Main content background color: #ffffff
 
 Main content border color: #dddddd */
-
+/*  */
+/* basically a minor reset */
 html{
     padding:0;
     height:100%;
@@ -26,19 +27,19 @@ body{
     background-image: url("../images/white-waves.png")
 }
 
-h1,h2{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 
 h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
     margin: 0px 0px 30px 0px;
     color: #4aaaa5;
 }
-
-h2{
-    text-align:center;
+#name{
     color: #ffffff;
+    text-align:center;
 }
+
 
 
 header{
@@ -46,14 +47,16 @@ header{
     background-position: top center;
     background-size: 100%;
     border: 1px solid #cccccc;
+    width:100%;
 }
 
 .header, .content{
     max-width: 960px;
     margin: 0 auto;
 }
-
+/* name with teal */
 .myName{
+    /* height:100%; */
     max-width: 40%;
     margin:0 auto;
     float: left;
@@ -61,8 +64,10 @@ header{
     background-color: #4aaaa5;
     width: 40%;
     line-height:.1;
+    color:#ffffff;
 
 }
+/* After header content */
 header::after {
     content: "";
     display: block;
@@ -73,31 +78,32 @@ header::after {
     float: right;
     margin-top: 15px;
 }
-
+/* whitespace around about me */
 .wrapper{
-    margin-bottom: -50px;
-    margin-top: 50px;
+    margin-bottom: -25px;
+    margin-top: 25px;
     min-height:100%;
 }
 
 .container{
     padding: 40px;
     border: 1px solid #dddddd;
-}
-
-.content{
     background: #ffffff;
 }
+
+
 
 .content-body{
     padding-top: 20px;
 }
 
+/* Remove bullets from ul */
 ul{
     list-style-type: none;
     padding-inline-start: 0px;
 }
 
+/* nav bar links */
 li{
     float:left;
 }
@@ -114,4 +120,7 @@ li a{
     height: 200px;
     margin: 30px 20px 10px 0px;
     float: left;
+}
+.button{
+    background-color:#4aaaa5;
 }
