@@ -144,6 +144,26 @@ li a{
   */
   .input{
       width: 960px;
-      /* margin: 0px 20px; */
   }
+
+/* Portfolio pics with text */
+.relative{
+    position:relative; 
+    width:200px;
+    margin: 20px 20px 20px 20px
+}
+.absolute-text{
+    position:absolute; 
+    bottom:0; 
+    font-size:24px; 
+    font-family:"vedana"; 
+    background:#4aaaa5; 
+    width:100%; 
+    text-align:center;
+    color:#ffffff;
+}
+.absolute-text a{
+    font-size:16px; 
+    
+}
 
